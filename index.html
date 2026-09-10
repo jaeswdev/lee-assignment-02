@@ -27,14 +27,26 @@
                 <p id="totalLine">Total =</p>
             </form>
         </section>
-        <div class="fontStyle">
+        <section class="panel">
             <h2>Change Text Style</h2>
-            <p>
-                Select Style:
-                Change Style
-                This is the text to be styled
-            </p>
-        </div>
+            <form class="panel-body">
+                <div class="field-row">
+                    <label for="selectStyle">Select Style:</label>
+                    <select id="styleSelect">
+                        <option value="normal">Normal</option>
+                        <option value="bold">Bold</option>
+                        <option value="italic">Italic</option>
+                        <option value="bold italic">Bold Italic</option>
+                    </select>
+                </div>
+
+                <div class="field-row">
+                    <button type="button" id="styleButton">Change Style</button>
+                </div>
+
+                <p id="styledText">This is the text to be styled</p>
+            </form>
+        </section>
         
     </body>
 </html>
