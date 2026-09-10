@@ -1,0 +1,86 @@
+:root {
+    --text-color: #000000;
+    --panel-bg: #ebebeb;
+    --rule-color: #000000;
+    --error-color: #b00020;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-color);
+    font-size: 14px;
+    margin: 24px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: normal;
+    border-bottom: 2px solid var(--rule-color);
+    padding-bottom: 8px;
+    margin-bottom: 28px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.panel {
+    max-width: 320px;
+    margin-bottom: 36px;
+}
+
+.panel-body {
+    background-color: var(--panel-bg);
+    padding: 12px;
+}
+
+.field-row label {
+    flex: 0 0 110px;
+}
+
+input[type="text"],
+select {
+    font-family: var(--body-font);
+    font-size: 14px;
+    padding: 2px 4px;
+    cursor: text;
+}
+
+button {
+    font-family: var(--body-font);
+    font-size: 13px;
+    padding: 3px 10px;
+    cursor: pointer;
+}
+
+#totalLine,
+#styledText {
+    margin: 12px 0 0 0;
+}
+
+#totalLine.error {
+    color: var(--error-color);
+}
+
+input:focus,
+select:focus,
+button:focus {
+    outline: 2px solid #0057b8;
+    outline-offset: 1px;
+}
+
+.normal {
+    font-weight: normal;
+    font-style: normal;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
