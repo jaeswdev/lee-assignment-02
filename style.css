@@ -37,6 +37,13 @@ h2 {
     padding: 12px;
 }
 
+.field-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 10px;
+}
+
 .field-row label {
     flex: 0 0 110px;
 }
