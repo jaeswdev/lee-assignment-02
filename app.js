@@ -28,4 +28,12 @@ function addNumbers() {
     return;
 }
 
+function changeStyle() {
+    const chosen = document.getElementById("styleSelect").value;
+    const styledText = document.getElementById("styledText");
+
+    styledText.className = chosen;
+}
+
 document.getElementById("addButton").addEventListener("click", addNumbers);
+document.getElementById("styleButton").addEventListener("click", changeStyle);
